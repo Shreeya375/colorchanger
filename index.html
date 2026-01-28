@@ -52,3 +52,31 @@
 <p id="colorName">Background: white</p>
 
 <script>
+    
+// my pastel color list
+let colors = 
+[
+  "pink","lightblue","lavender","peachpuff","mintcream",
+  "lightyellow","honeydew","powderblue","mistyrose",
+  "lightgreen","plum","cornsilk","aliceblue","seashell"
+];
+
+let btn = document.getElementById("btn");
+let colorName = document.getElementById("colorName");
+
+// when the button gets clicked...
+btn.onclick = function() {
+  // pick a random color from the list
+  let newColor = colors[Math.floor(Math.random() * colors.length)];
+
+  // change the bg
+  document.body.style.backgroundColor = newColor;
+
+  // update the text so the user knows the color name
+  colorName.textContent = "Background: " + newColor;
+}
+
+</script>
+  </body>
+</html>
+
