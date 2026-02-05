@@ -1,3 +1,5 @@
+Note: This has already been reviewed, and I talked to the reviewer. All code was written in VS Code and then I put it on this repository. I've been having issues with GIT setup and had already addressed it in the tech support channel, which may help explain my commit history. The README was written by me. Thanks!
+
 # colorchanger
 I created a simple, beginner‑friendly code that changes colors.
 The languages used were HTML, CSS, and JavaScript.
@@ -14,3 +16,4 @@ The languages used were HTML, CSS, and JavaScript.
 - Using Java Script to change the background color.
 
 - Still currently working on updates! :) 
+
