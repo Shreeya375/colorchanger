@@ -9,43 +9,36 @@
         background: white; /* initial background color */
         font-family: Arial, sans-serif;
         text-align: center;
-        margin: 0;
-        padding-top: 60px;
-      }
+        margin-top: 50px;
+     }
     
       h1 
         {
-        margin-bottom: 20px;
-        font-size: 28px;
-        color: #444;
-      }
+         color: black
+       }
     
       button 
         {
-        padding: 12px 20px; /* style of button */
-        background: purple;
+        background-color: purple; /* style of button */
         color: white;
-        border: none;
-        border-radius: 6px;
+        padding: 10px;
         font-size: 18px;
         cursor: pointer;
-        transition: 0.2s;
       }
      button:hover 
      {
         background: rgb(118, 171, 232);
         transform: scale(1.05);
      }
-      #colorName {
-        margin-top: 20px;
+      p {
         font-size: 22px;
-        color: #333;
       }
+        
         </style>
     </head>
 <body>
 
-<h1> *°•.˜”*°• Click the button to change the background! •°*”˜.•°* </h1>
+<h1> Click the button to change the background! </h1>
 
 <button id="btn">Change Color</button>
 
@@ -62,7 +55,7 @@ let colors =
 ];
 
 let btn = document.getElementById("btn");
-let colorName = document.getElementById("colorName");
+let text = document.getElementById("colorName");
 
 // when the button gets clicked...
 btn.onclick = function() {
