@@ -16,7 +16,7 @@
         {
          color: black
        }
-    
+        
       button 
         {
         background-color: purple; /* style of button */
@@ -43,10 +43,12 @@
 <button id="btn">Change Color</button>
 
 <p id="colorName">Background: white</p>
+    <p id="count">Clicks: 0</p>
+
 
 <script>
     
-// my pastel color list
+// pastel colors list
 let colors = 
 [
   "pink","lightblue","lavender","peachpuff","mintcream",
@@ -54,15 +56,19 @@ let colors =
   "lightgreen","plum","cornsilk","aliceblue","seashell"
 ];
 
-let btn = document.getElementById("btn");
-let text = document.getElementById("colorName");
-
+let btn = document.getElementById("btn"); 
+let colorName = document.getElementById("colorName"); 
+let count = document.getElementById("count");
+let clicks = 0;
+    
 // when the button gets clicked...
 btn.onclick = function() {
   // pick a random color from the list
+    clicks++; 
+    count.textContent = "Clicks: " + clicks;
   let newColor = colors[Math.floor(Math.random() * colors.length)];
-
-  // change the bg
+   
+  // update for the new color
   document.body.style.backgroundColor = newColor;
 
   // update the text so the user knows the color name
