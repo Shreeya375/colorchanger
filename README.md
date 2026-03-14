@@ -18,6 +18,4 @@ What I learned:
 
 
 
-- Still currently working on updates! :) 
-
 Live Demo link: https://shreeya375.github.io/colorchanger/
